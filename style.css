@@ -4,3 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: lightblue;
+	background: url(./img/Screenshot\ 2022-06-09\ 001306.jpg);
+	background-position: center;
+	background-size: cover;
+}
