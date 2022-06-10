@@ -39,7 +39,8 @@ function newGame (){
             }
             else{
                 if (rights.length > 0){
-                    
+                    rights = rights.slice(1)
+                    right.innerHTML = `${rights}`
                     if (randomNum == guess.value){
                         result.innerHTML = `Congratulations! You made it in ${7-rights.length} tries.`
                         check.style.display = "none"
@@ -63,8 +64,6 @@ function newGame (){
                         Restart.style.display = "none"
                         check.style.display = "inline-block"
                     }
-                    rights = rights.slice(1)
-                    right.innerHTML = `${rights}`
                 }
                 if (rights.length == 0 && randomNum == guess.value){
                     result.innerHTML = `Congratulations! You made it in ${7-rights.length} tries.`

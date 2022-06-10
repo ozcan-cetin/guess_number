@@ -11,3 +11,78 @@ body{
 	background-position: center;
 	background-size: cover;
 }
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+header{
+	font-family: 'Caveat', cursive;
+}
+
+.guess{
+    width: 5rem;
+    }
+
+.check {
+    width: 5rem;
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:1rem;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.check:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.check:active {
+	position:relative;
+	top:1px;
+}
+
+.new {
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+	background-color:#77d42a;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	cursor:pointer;
+	color:#306108;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #aade7c;
+}
+.new:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.new:active {
+	position:relative;
+	top:1px;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: 900;
+}
