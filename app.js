@@ -42,7 +42,7 @@ function newGame (){
                     rights = rights.slice(1)
                     right.innerHTML = `${rights}`
                     if (randomNum == guess.value){
-                        result.innerHTML = `😎Congratulations! You made it in ${7-rights.length} tries.`
+                        result.innerHTML = `😎Congratulations! You made it in 👏${7-rights.length} tries.`
                         check.style.display = "none"
                         Restart.style.display = "inline-block"
                         Restart.addEventListener("click", ()=>{
