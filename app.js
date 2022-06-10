@@ -42,7 +42,7 @@ function newGame (){
                     rights = rights.slice(1)
                     right.innerHTML = `${rights}`
                     if (randomNum == guess.value){
-                        result.innerHTML = `Congratulations! You made it in ${7-rights.length} tries.`
+                        result.innerHTML = `😎Congratulations! You made it in ${7-rights.length} tries.`
                         check.style.display = "none"
                         Restart.style.display = "inline-block"
                         Restart.addEventListener("click", ()=>{
@@ -51,14 +51,14 @@ function newGame (){
                     }
         
                     else if (randomNum > guess.value){
-                        result.innerHTML = `You must increase`
+                        result.innerHTML = `You must increase ⬆`
                         first = guess.value;
                         start.innerHTML = `Enter a number between ${first}-${last}`
                         Restart.style.display = "none"
                         check.style.display = "inline-block"
                     }
                     else if (randomNum < guess.value){
-                        result.innerHTML = `You must decrease`
+                        result.innerHTML = `You must decrease ⬇`
                         last = guess.value;
                         start.innerHTML = `Enter a number between ${first}-${last}`
                         Restart.style.display = "none"
@@ -74,7 +74,7 @@ function newGame (){
                     })
                 }
                 else if (rights.length == 0){
-                    result.innerHTML = `Your rights ended. My number was ${randomNum}`
+                    result.innerHTML = `😥Your rights ended. My number was 👉${randomNum}`
                     check.style.display = "none"
                     Restart.style.display = "inline-block";
                     Restart.addEventListener("click", ()=>{
